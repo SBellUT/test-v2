@@ -17,14 +17,10 @@ input.onButtonPressed(Button.A, function () {
 input.onPinPressed(TouchPin.P1, function () {
     if (!(input.pinIsPressed(TouchPin.P0))) {
         if (happySad == ":)") {
-            music.playTone(349, music.beat(BeatFraction.Whole))
-            music.playTone(330, music.beat(BeatFraction.Whole))
             music.playTone(294, music.beat(BeatFraction.Whole))
             music.playTone(220, music.beat(BeatFraction.Double))
             happySad = ":("
         } else {
-            music.playTone(262, music.beat(BeatFraction.Whole))
-            music.playTone(294, music.beat(BeatFraction.Whole))
             music.playTone(330, music.beat(BeatFraction.Whole))
             music.playTone(523, music.beat(BeatFraction.Double))
             happySad = ":)"
@@ -84,5 +80,8 @@ basic.forever(function () {
         basic.pause(100)
         max7219_matrix.clearAll()
         basic.pause(100)
+    }
+    if (input.buttonIsPressed(Button.A) && input.pinIsPressed(TouchPin.P1)) {
+        music.playTone(131, music.beat(BeatFraction.Whole))
     }
 })

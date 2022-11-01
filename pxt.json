@@ -1,17 +1,16 @@
 {
-    "name": "test V2",
+    "name": "FidgetCubeFinal",
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*",
         "LCD1in8": "github:waveshare/PXT-WSLCD1in8#134289e495cd63679567767551acb92e81df1a3e",
         "pxt-max7219_8x8": "github:alankrantas/pxt-MAX7219_8x8#v0.0.3"
     },
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
